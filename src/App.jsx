@@ -20,9 +20,21 @@ const App = () => {
         <h1 className="font-bold text-2xl">Counter App</h1>
         <h2 className="text-xl">{count}</h2>
         <div className="flex flex-row gap-x-5 ">
-          <Button onClick={increment} text="Increment" />
-          <Button onClick={decrement} text="Decrement" />
-          <Button onClick={clear} text="Clear" />
+          <Button
+            onClick={increment}
+            text="Increment"
+            style="font-bold text-center bg-blue-200 border-solid border-2 border-black py-2 px-3 rounded-lg"
+          />
+          <Button
+            onClick={decrement}
+            text="Decrement"
+            style="font-bold text-center bg-red-200 border-solid border-2 border-black py-2 px-3 rounded-lg"
+          />
+          <Button
+            onClick={clear}
+            text="Clear"
+            style="font-bold text-center bg-yellow-200 border-solid border-2 border-black py-2 px-3 rounded-lg"
+          />
         </div>
       </div>
     </div>
